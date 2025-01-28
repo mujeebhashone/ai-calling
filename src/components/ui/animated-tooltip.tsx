@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Person {
   id: number;
@@ -30,7 +31,9 @@ export function AnimatedTooltip({ items }: AnimatedTooltipProps) {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
           >
-            <img
+            <Image
+              width={100}
+              height={100}
               src={item.image}
               alt={item.name}
               className="object-cover rounded-full h-24 w-24 border-2 border-white group-hover:border-blue-500 transition-colors"

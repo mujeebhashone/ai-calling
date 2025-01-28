@@ -3,6 +3,7 @@ import { ChevronRight, Play, Sparkles as SparklesIcon } from "lucide-react";
 
 
 import { FlipWords } from "./ui/flip-words";
+import Image from "next/image";
 
 
 
@@ -49,8 +50,10 @@ export function Hero() {
             </div>
             </div>
           <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            <Image
+              width={500}
+              height={500}
+              src="/images/hero.png"
               alt="AI Communication Visualization"
               className="rounded-2xl shadow-2xl"
             />
